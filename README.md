@@ -108,20 +108,7 @@ Runs the app in dev mode at `http://localhost:4200/`.
 
 ---
 
-## 📦 Folder Structure
-```
-src/
- ├── app/
- │    ├── components/     # Reusable UI components (BEM standard)
- │    ├── services/       # API calls, Angular Signals state
- │    ├── layouts/        # Grid/List layouts
- │    ├── themes/         # Light/Dark theme styles
- │    └── core/           # App-wide configuration and utilities
- ├── assets/              # Images, icons, fonts
- ├── styles/              # Global SCSS with BEM structure
-```
 
----
 
 ## 📊 Performance Monitoring
 - **Web Vitals** metrics tracked for:
