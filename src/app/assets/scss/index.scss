@@ -1,2 +1,3 @@
-@use "./base/resets";
-@use "./base/typography";
+@forward "./abstracts/functions";
+@forward "./abstracts/variables";
+@forward "./abstracts/mixins";
