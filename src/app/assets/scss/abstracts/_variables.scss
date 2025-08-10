@@ -1,0 +1,52 @@
+@use "./functions" as *;
+@use "../utils/colors" as *;
+// Page Colors
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$success-color: var(--tertiary-color);
+$danger-color: var(--danger-color);
+$warning-color: var(--warning-color);
+$text-color: var(--text-color);
+
+// Fonts Weights
+$font__weight--thin: 100;
+$font__weight--extra-light: 200;
+$font__weight--light: 300;
+$font__weight--normal: 400;
+$font__weight--medium: 500;
+$font__weight--semi-bold: 600;
+$font__weight--bold: 700;
+
+// Line Heights
+$line__height-xs: 14px;
+$line__height-s: 16px;
+$line__height-base: 18px;
+$line__height-m: 20px;
+$line__height-l: 24px;
+$line__height-xl: 32px;
+$line__height-2xl: 40px;
+$line__height-3xl: 48px;
+
+// Font Sizes
+$fs__10: 0.625rem;
+$fs__12: 0.75rem;
+$fs__14: 0.875rem;
+$fs__16: 1rem;
+$fs__18: 1.125rem;
+$fs__20: 1.25rem;
+$fs__22: 1.375rem;
+$fs__24: 1.5rem;
+$fs__26: 1.625rem;
+$fs__28: 1.75rem;
+$fs__32: 2rem;
+$fs__36: 2.25rem;
+$fs__40: 2.5rem;
+
+// Breakpoints
+$desktop: rem(1200);
+$tablet: rem(1025);
+$mobile: rem(768);
+$mobile-xs: rem(480);
+
+//font families
+$archivo: "Archivo", sans-serif;

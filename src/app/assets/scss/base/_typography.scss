@@ -1,0 +1,6 @@
+@use "../abstract/variables" as *;
+body {
+  font-family: $archivo;
+  font-size: $fs__16;
+  background-color: $text-color;
+}

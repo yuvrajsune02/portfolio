@@ -1,0 +1,46 @@
+//mixin for common scrollbar style
+// Usage: @include customScrollbar(#999, transparent, 8px, 8px);
+@mixin customScrollbar(
+  $thumb-color: #999,
+  $track-color: transparent,
+  $width: 8px,
+  $radius: 8px
+) {
+  // Firefox
+  scrollbar-width: thin;
+  scrollbar-color: #{$thumb-color} #{$track-color};
+
+  // Webkit (Chrome, Safari, Edge)
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumb-color;
+    border-radius: $radius;
+    border: 2px solid transparent; // optional padding effect
+    background-clip: content-box;
+  }
+}
+
+// to truncate text with ellipsis
+// Usage: @include truncate;
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// to truncate text with ellipsis
+// Usage: @include truncateByLines(2);
+@mixin truncateByLines($lines) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
